@@ -41,14 +41,30 @@ main.py
 
 
 
-### no more change needed (except __main__)
+
+#add ons
+*** now need to get more data (lineup usw)
+*** now need to determine how i want to save and display the data
+*** add options to search for only one specific game and so on (maybe)
+
+
+
+
+
+
+
+
+### no more change needed (except __main__ or add ons)
 - get_todays_fixtures.py
 - controller_fixtures.py
 - save_todays_fixtures.py
 - webdriver_creater.py
+- controller_game.py
+_ get_fixtures_data.py
 
 
 
 
 
+## need to clean up and decide how i pass variables (global vs local) (no return function)
 ### need to edit the if __name__ = __main__

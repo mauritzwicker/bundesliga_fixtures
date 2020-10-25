@@ -4,6 +4,7 @@ from webdriver_creater import Webdriver
 import pandas as pd
 from datetime import datetime
 from datetime import timedelta
+import time
 
 class Bundesliga_fixtures():
 
@@ -32,9 +33,6 @@ class Bundesliga_fixtures():
         else:
             print('Already saved Todays ({0}) Fixtures'.format(self.last_date_saved))
 
-
-
-        quit()
 
 
     def check_today_fixtures_get(self):
@@ -75,12 +73,18 @@ class Bundesliga_fixtures():
 
 
 
-
-
-
-
-
 #if running without main.py
 if __name__ == '__main__':
+
+    t_start = time.perf_counter()
+
     url_bundesliga = "https://www.scoreboard.com/en/soccer/germany/bundesliga/fixtures/"
-    Bundesliga_fixtures(url_bundesliga)
+    fixtures_today = Bundesliga_fixtures(url_bundesliga)
+
+    print()
+    print(fixtures_today.last_saved_games)
+    print()
+
+    t_done = time.perf_counter()
+    t_runtime = t_done - t_start
+    print('Time to run: {0}'.format(t_runtime))
