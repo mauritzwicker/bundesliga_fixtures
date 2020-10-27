@@ -40,6 +40,10 @@ main.py
         -> get_fixture_data.py
 
 
+#to display on led matrix
+display_game_led
+#get the game file with the data and format the data so that we can display it on the led matrix
+#this is not really working (i think we need to create a new canvas for multiple objects)
 
 
 #add ons

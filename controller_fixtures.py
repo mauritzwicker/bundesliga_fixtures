@@ -66,6 +66,7 @@ class Bundesliga_fixtures():
             self.last_date_saved = date_today
         else:
             print('No games today, come back tomorrow...')
+            quit()
             # print('failed save fixtures')
 
 

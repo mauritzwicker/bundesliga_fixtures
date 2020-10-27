@@ -2,6 +2,7 @@
 #IMPORTS
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options  # for suppressing the browser
 import time
 from bs4 import BeautifulSoup
 import bs4
@@ -39,9 +40,11 @@ class Webdriver:
     def create_webdriver(self):
         #### Create the webdriver given the url
         url = self.url      #do we need this?
-        driver = webdriver.Chrome(ChromeDriverManager().install())
+        option = webdriver.ChromeOptions()
+        option.add_argument('headless')
+        driver = webdriver.Chrome(ChromeDriverManager().install(), options=option)
         driver.maximize_window()
         driver.get(url)
         #to close the drive as soon as loaded (find a way to not open it at all)
-        time.sleep(0)
+        # time.sleep(0)
         return(driver)

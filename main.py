@@ -11,9 +11,20 @@ if __name__ == '__main__':
 
     #league url
     url_bundesliga = "https://www.scoreboard.com/en/soccer/germany/bundesliga/fixtures/"
+    url_bundesliga = "https://www.scoreboard.com/en/soccer/brazil/serie-b/fixtures/"
+
+    ##############
+    ## Need to include that it only laods the fixtures page if we dont have todays fixtures!!!
+    ##############
 
     #now we have our object that has checked and gotten todays fixtures
     bundi_fixtures = Bundesliga_fixtures(url_bundesliga)
+
+
+
+
+    # we need to detach this step so that it gets the current fixture infor seperatly and not always with the fixtures
+
 
     #now we create an object for each of the fixtures (we are interested in)
     fixtures_threads = []
@@ -36,5 +47,8 @@ if __name__ == '__main__':
 
 
 
+    #######
+    # WE NEED TO DELETE ALL THE GAME FILES
+    #######
 
     ### add timing (beginning and end)
