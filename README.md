@@ -1,5 +1,6 @@
-# bundesliga_fixtures '***'**WORK IN PROGRESS***\*/*
-# VERY MUCH SPAGHETTI CODE
+# bundesliga_fixtures !!! \*\*\* *WORK IN PROGRESS* \*\*\* !!!
+# SPAGHETTI CODE not ready for use
+
 
 
 Web scrape Bundesliga fixtures (from scoreboard.com) for score, info, lineup. Show on raspberry-pi controlled rgb-matrix.
