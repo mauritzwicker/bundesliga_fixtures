@@ -1,4 +1,7 @@
-# bundesliga_fixtures
+# bundesliga_fixtures *****WORK IN PROGRESS*****
+# VERY MUCH SPAGHETTI CODE
+
+
 Web scrape Bundesliga fixtures (from scoreboard.com) for score, info, lineup. Show on raspberry-pi controlled rgb-matrix.
 .
 
@@ -71,4 +74,4 @@ _ get_fixtures_data.py
 
 
 ## need to clean up and decide how i pass variables (global vs local) (no return function)
-### need to edit the if __name__ = __main__
+### need to edit the if __name__ == __main__
